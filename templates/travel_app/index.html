@@ -74,7 +74,7 @@
 		          		<span class="subheading pl-5">Discover India</span>
 			            <h1 class="mb-4 mt-3">Explore Your Travel Destinations like never before</h1>
 			            <p>Welcome to the heartland of cultural diversity, natural beauty and a palate full of food.</p>
-			            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Discover <span class="ion-ios-arrow-forward"></span></a></p>
+<!---->			        <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Discover <span class="ion-ios-arrow-forward"></span></a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -96,7 +96,7 @@
 		          		<span class="subheading pl-5">Discover Mumbai</span>
 			            <h1 class="mb-4 mt-3">Never Stop Exploring</span></h1>
 			            <p>A seaside city that shines bright, day and night.</p>
-			            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Discover <span class="ion-ios-arrow-forward"></span></a></p>
+<!-- --> 	            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Discover <span class="ion-ios-arrow-forward"></span></a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -119,7 +119,7 @@
 		          		<span class="subheading pl-5">Discover Ladakh</span>
 			            <h1 class="mb-4 mt-3">Never Stop Wandering</span></h1>
 			            <p>Snowy mountains, chilly winds, and clear water seem like heaven on a Harley.</p>
-			            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Discover <span class="ion-ios-arrow-forward"></span></a></p>
+<!-- -->	            <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Discover <span class="ion-ios-arrow-forward"></span></a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -139,7 +139,7 @@
 	    	<div class="row">
 					<div class="col-md-12">
 						<div class="search-wrap-1 ftco-animate p-4">
-							<form action="#" class="search-property-1">
+<!-- -->					<form action="#" class="search-property-1">
 		        		<div class="row">
 		        			<div class="col-lg align-items-end">
 		        				<div class="form-group">
@@ -168,7 +168,7 @@
 										<select name="" id="" class="form-control">
 											<option value="" selected class="blank">Select Company</option>
 											<option value="">Couple</option>
-											<option value="">Freinds</option>
+											<option value="">Friends</option>
 											<option value="">Family</option>
 										</select>
 									</div>
@@ -234,7 +234,7 @@
 		        			<div class="col-lg align-self-end">
 		        				<div class="form-group">
 		        					<div class="form-field">
-				                <input type="submit" value="Search" class="form-control btn btn-primary">
+<!-- -->			                <input type="submit" value="Search" class="form-control btn btn-primary">
 				              </div>
 			              </div>
 		        			</div>
@@ -312,7 +312,7 @@
 			            <p>We make this task perfectly easy for you by providing you options that you can travel to by taking into account your preferences.</p>
 			            <p>Just log in, tell us your choices and get started with discovering exciting new destinations.</p>
 						<p> </p>
-			            <p><a href="{% url 'travel_app:destination' %}" class="btn btn-primary py-3 px-4">Discover now</a> <a href="#contact-section" class="btn btn-white py-3 px-4">Contact us</a></p>
+<!-- -->	            <p><a href="{% url 'travel_app:destination' %}" class="btn btn-primary py-3 px-4">Discover now</a> <a href="#contact-section" class="btn btn-white py-3 px-4">Contact us</a></p>
 			          </div>
 			        </div>
 		        </div>
@@ -328,7 +328,7 @@
 					<div class="col-md-9 text-center">
 						<h2>Choose the Perfect Destination</h2>
 						<p>We can help you find the perfect destination of your dreams.</p>
-						<p class="mb-0"><a href="destination.html" class="btn btn-white px-4 py-3">Search Places</a></p>
+<!-- -->				<p class="mb-0"><a href="{% url 'travel_app:destination' %}" class="btn btn-white px-4 py-3">Search Places</a></p>
 					</div>
 				</div>
 			</div>
@@ -347,10 +347,10 @@
     			<div class="col-md-6 col-lg-4 ftco-animate">
     				<div class="project">
     					<div class="img">
-		    				<a href="destination.html"><img src="{% static "images/destination-1.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
+		    				<a href="{% url 'travel_app:destination' %}"><img src={% static "images/destination-1.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
 	    				</div>
 	    				<div class="text">
-	    					<h3><a href="destination.html">Rishikesh, Uttarakhand</a></h3>
+	    					<h3><a href="{% url 'travel_app:destination' %}">Rishikesh, Uttarakhand</a></h3>    <!-- Done -->
 	    					<div class="star d-flex clearfix">
 	    						<div class="mr-auto float-left">
 		    						<span class="ion-ios-star"></span>
@@ -372,10 +372,10 @@
     			<div class="col-md-6 col-lg-4 ftco-animate">
     				<div class="project">
     					<div class="img">
-		    				<a href="destination.html"><img src={% static "images/destination-2.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
+		    				<a href="{% url 'travel_app:destination' %}"><img src={% static "images/destination-2.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
 	    				</div>
 	    				<div class="text">
-	    					<h3><a href="destination.html">Andaman, Andaman and Nicobar Islands</a></h3>
+	    					<h3><a href="{% url 'travel_app:destination' %}">Andaman, Andaman and Nicobar Islands</a></h3>
 	    					<div class="star d-flex clearfix">
 	    						<div class="mr-auto float-left">
 		    						<span class="ion-ios-star"></span>
@@ -397,10 +397,10 @@
     			<div class="col-md-6 col-lg-4 ftco-animate">
     				<div class="project">
     					<div class="img">
-		    				<a href="destination.html"><img src={% static "images/destination-3.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
+		    				<a href="{% url 'travel_app:destination' %}"><img src={% static "images/destination-3.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
 	    				</div>
 	    				<div class="text">
-	    					<h3><a href="destination.html">Jodhpur, Rajasthan</a></h3>
+	    					<h3><a href="{% url 'travel_app:destination' %}">Jodhpur, Rajasthan</a></h3>
 	    					<div class="star d-flex clearfix">
 	    						<div class="mr-auto float-left">
 		    						<span class="ion-ios-star"></span>
@@ -422,10 +422,10 @@
     			<div class="col-md-6 col-lg-4 ftco-animate">
     				<div class="project">
     					<div class="img">
-		    				<a href="destination.html"><img src={% static "images/destination-4.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
+		    				<a href="{% url 'travel_app:destination' %}"><img src={% static "images/destination-4.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
 	    				</div>
 	    				<div class="text">
-	    					<h3><a href="destination.html">Agra, Uttar Pradesh</a></h3>
+	    					<h3><a href="{% url 'travel_app:destination' %}">Agra, Uttar Pradesh</a></h3>
 	    					<div class="star d-flex clearfix">
 	    						<div class="mr-auto float-left">
 		    						<span class="ion-ios-star"></span>
@@ -447,10 +447,10 @@
     			<div class="col-md-6 col-lg-4 ftco-animate">
     				<div class="project">
     					<div class="img">
-		    				<a href="destination.html"><img src={% static "images/destination-5.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
+		    				<a href="{% url 'travel_app:destination' %}"><img src={% static "images/destination-5.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
 	    				</div>
 	    				<div class="text">
-	    					<h3><a href="destination.html">Goa, Goa</a></h3>
+	    					<h3><a href="{% url 'travel_app:destination' %}">Goa, Goa</a></h3>
 	    					<div class="star d-flex clearfix">
 	    						<div class="mr-auto float-left">
 		    						<span class="ion-ios-star"></span>
@@ -472,10 +472,10 @@
     			<div class="col-md-6 col-lg-4 ftco-animate">
     				<div class="project">
     					<div class="img">
-		    				<a href="destination.html"><img src={% static "images/destination-6.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
+		    				<a href="{% url 'travel_app:destination' %}"><img src={% static "images/destination-6.jpg" %} class="img-fluid" alt="Travel Recommendation"></a>
 	    				</div>
 	    				<div class="text">
-	    					<h3><a href="destination.html">Srinagar, Jammu and Kashmir</a></h3>
+	    					<h3><a href="{% url 'travel_app:destination' %}">Srinagar, Jammu and Kashmir</a></h3>
 	    					<div class="star d-flex clearfix">
 	    						<div class="mr-auto float-left">
 		    						<span class="ion-ios-star"></span>
@@ -864,7 +864,8 @@
         <div class="row d-flex">
           <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url({% static 'images/image_1.jpg' %});">
+				<!-- Unable to change it to single.html -->              
+				<a href="{% url 'travel_app:destination' %}" class="block-20" style="background-image: url({% static 'images/image_1.jpg' %});">
               </a>
               <div class="text float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -876,13 +877,23 @@
               			<span class="mos">April</span>
               		</div>
               	</div>
-                <h3 class="heading"><a href="single.html">20 great things to do in Delhi, India's historic capital</a></h3>
+				<!-- Unable to change it to single.html --> 
+
+				<!--
+					destination-single
+					questionnarie
+					single
+					user_home
+					doesn't work
+				-->
+
+<!-- -->        <h3 class="heading"><a href="{% url 'travel_app:destination' %}">20 great things to do in Delhi, India's historic capital</a></h3>
                 <p>At first glance, the Indian capital can seem an overwhelming place to negotiate, but give it time and you'll feel the chaos subside, revealing delicate vignettes of daily life and layer upon layer of ancient history.</p>
                 <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+<!-- -->	        <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
 	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+<!-- -->            	<a href="#" class="mr-2">Admin</a>
+<!-- -->            	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
 	                </p>
                 </div>
               </div>
@@ -890,8 +901,7 @@
           </div>
           <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url({% static 'images/image_2.jpg' % });">
-              </a>
+<!-- -->      <a href="{% url 'travel_app:destination' %}" class="block-20" style="background-image: url({% static 'images/image_2.jpg' %});"></a>
               <div class="text float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
               		<div class="one mr-2">
@@ -902,7 +912,7 @@
               			<span class="mos">August</span>
               		</div>
               	</div>
-                <h3 class="heading"><a href="single.html">Highlights of Mumbai</a></h3>
+<!-- -->        <h3 class="heading"><a href="single.html">Highlights of Mumbai</a></h3>
                 <p>Mumbai- the city that 'never sleeps' has many interesting places to visit like Mani Bhavan, Marine Drive, Dhobi Ghat, Prince of Wales Museum, Flora fountain, and Bollywood City. Visit this city full of fun, wonder and life. Shop your hearts out in the fashionable yet cheap market.</p>
                 <div class="d-flex align-items-center mt-4 meta">
 	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
@@ -916,7 +926,7 @@
           </div>
           <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url({% static 'images/image_3.jpg' %});">
+	<!-- -->  <a href="single.html" class="block-20" style="background-image: url({% static 'images/image_3.jpg' %});">
               </a>
               <div class="text float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -928,7 +938,7 @@
               			<span class="mos">January</span>
               		</div>
               	</div>
-                <h3 class="heading"><a href="single.html">Amber Fort, Jal Mahal, Hawa Mahal- Sights of Jaipur</a></h3>
+<!-- -->        <h3 class="heading"><a href="single.html">Amber Fort, Jal Mahal, Hawa Mahal- Sights of Jaipur</a></h3>
                 <p>Enjoy a memorable day of sightseeing and shopping in Jaipur. Visit a variety of well-known historical landmarks including the Amber Fort, the City Palace, the Hawa Mahal and more. Later in the day, roam around in the vast market to shop.</p>
                 <div class="d-flex align-items-center mt-4 meta">
 	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
@@ -956,7 +966,7 @@
 
         <div class="row block-9">
           <div class="col-md-7 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+<!-- -->    <form action="#" class="bg-light p-4 p-md-5 contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Your Name">
               </div>
@@ -985,7 +995,7 @@
 		          		</div>
 		          		<div>
 			          		<h3 class="mb-3">Address</h3>
-				            <p>Medicaps University, Indore</p>
+				            <p>Bangalore Institute of Technology, Bangalore</p>
 			            </div>
 			          </div>
 		          </div>
@@ -996,7 +1006,7 @@
 		          		</div>
 		          		<div>
 			          		<h3 class="mb-3">Contact Number</h3>
-				            <p><a href="tel://1234567920">+91- 8456734561</a></p>
+				            <p><a href="tel://1234567920">+91- 8660247633</a></p>
 			            </div>
 			          </div>
 		          </div>
@@ -1088,9 +1098,9 @@
               <h2 class="ftco-heading-2">About <span><a href="index.html">traverCity</a></span></h2>
               <p>A place to discover new places for your upcoming trips.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -1121,8 +1131,8 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Medicaps University, A.B. Road, Indore, M.P.</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91- 8456734561</span></a></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Bangalore Institute of Technology, Bangalore</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91- 8660247633</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@travercity.com</span></a></li>
 	              </ul>
 	            </div>
@@ -1157,6 +1167,8 @@
   <script src={% static "js/scrollax.min.js" %}></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src={% static "js/google-map.js" %}></script>
+
+  <script src="https://kit.fontawesome.com/57d8d0dc2e.js" crossorigin="anonymous"></script>  <!-- -->
 
   <script src={% static "js/main.js" %}></script>
 

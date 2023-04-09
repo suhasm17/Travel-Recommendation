@@ -120,7 +120,7 @@
 		    			<div class="col-md-6 col-lg-4 ftco-animate">
 		    				<div class="project">
 		    					<div class="img">
-				    				<a href="destination-single.html"><img src="images/destination-1.jpg" class="img-fluid" alt="Travel Recommendation"></a>
+				    				<a href="{% url 'travel_app:destination' %}"><img src="{% static "images/destination-1.jpg" %}" class="img-fluid" alt="Travel Recommendation"></a>
 			    				</div>
 			    				<div class="text">
 			    					<h3 onclick="ShowReviews()"><a href="destination-single.html">{{ gs0 }}</a></h3>
@@ -145,7 +145,7 @@
 		    			<div class="col-md-6 col-lg-4 ftco-animate">
 		    				<div class="project">
 		    					<div class="img">
-				    				<a href="destination-single.html"><img src="images/destination-2.jpg" class="img-fluid" alt="Travel Recommendation"></a>
+				    				<a href="destination-single.html"><img src="{% static "images/destination-2.jpg" %}" class="img-fluid" alt="Travel Recommendation"></a>
 			    				</div>
 			    				<div class="text">
 			    					<h3><a href="destination-single.html">{{ gs1 }}</a></h3>
@@ -170,7 +170,7 @@
 		    			<div class="col-md-6 col-lg-4 ftco-animate">
 		    				<div class="project">
 		    					<div class="img">
-				    				<a href="destination-single.html"><img src="images/destination-3.jpg" class="img-fluid" alt="Travel Recommendation"></a>
+				    				<a href="destination-single.html"><img src="{% static "images/destination-3.jpg" %}" class="img-fluid" alt="Travel Recommendation"></a>
 			    				</div>
 			    				<div class="text">
 			    					<h3><a href="destination-single.html">{{ gs2 }}</a></h3>
@@ -195,7 +195,7 @@
 		    			<div class="col-md-6 col-lg-4 ftco-animate">
 		    				<div class="project">
 		    					<div class="img">
-				    				<a href="destination-single.html"><img src="images/destination-4.jpg" class="img-fluid" alt="Travel Recommendation"></a>
+				    				<a href="destination-single.html"><img src="{% static "images/destination-4.jpg" %}" class="img-fluid" alt="Travel Recommendation"></a>
 			    				</div>
 			    				<div class="text">
 			    					<h3><a href="destination-single.html">{{ gs3 }}</a></h3>
@@ -220,7 +220,7 @@
 		    			<div class="col-md-6 col-lg-4 ftco-animate">
 		    				<div class="project">
 		    					<div class="img">
-				    				<a href="destination-single.html"><img src="images/destination-5.jpg" class="img-fluid" alt="Travel Recommendation"></a>
+				    				<a href="destination-single.html"><img src="{% static "images/destination-5.jpg" %}" class="img-fluid" alt="Travel Recommendation"></a>
 			    				</div>
 			    				<div class="text">
 			    					<h3><a href="destination-single.html">{{ gs4 }}</a></h3>
@@ -245,7 +245,7 @@
 		    			<div class="col-md-6 col-lg-4 ftco-animate">
 		    				<div class="project">
 		    					<div class="img">
-				    				<a href="destination-single.html"><img src="images/destination-6.jpg" class="img-fluid" alt="Travel Recommendation"></a>
+				    				<a href="destination-single.html"><img src="{% static "images/destination-6.jpg" %}" class="img-fluid" alt="Travel Recommendation"></a>
 			    				</div>
 			    				<div class="text">
 			    					<h3><a href="destination-single.html">{{ gs5 }}</a></h3>
@@ -441,7 +441,7 @@
                 </li>
               </ul>
               <!-- END comment-list -->
-
+			  
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5">Leave a comment</h3>
                 <form action="#" class="p-5 bg-light">
@@ -485,9 +485,9 @@
               <h2 class="ftco-heading-2">About <span><a href="index.html">traverCity</a></span></h2>
               <p>A place to discover new places for your upcoming trips.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -518,8 +518,8 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Medicaps University, A.B. Road, Indore, M.P.</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91- 8456734561</span></a></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Bangalore Institute of Technology, Bangalore</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91- 8660247633</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@travercity.com</span></a></li>
 	              </ul>
 	            </div>
@@ -556,6 +556,8 @@
   <script src={% static "js/google-map.js" %}></script>
 
   <script src={% static "js/main.js" %}></script>
+
+  <script src="https://kit.fontawesome.com/57d8d0dc2e.js" crossorigin="anonymous"></script>  <!-- -->
 
   <script>
   function ShowReviews()
