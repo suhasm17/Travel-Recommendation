@@ -13,8 +13,8 @@ class datarel:
 
     citiesId_to_name = {}
     name_to_citiesId = {}
-    ratingsPath = r'E:\\Travel-Recommendation\\data\\ratings.csv'
-    citiesPath = r'E:\\Travel-Recommendation\\data\\cities.csv'
+    ratingsPath = r'C:\\Users\\Vijay\\Desktop\\final-year-project\\Travel-Recommendation\\data\\ratings.csv'
+    citiesPath = r'C:\\Users\\Vijay\\Desktop\\final-year-project\\Travel-Recommendation\\data\\cities.csv'
 
     def loadCitiesLatest(self):
 
